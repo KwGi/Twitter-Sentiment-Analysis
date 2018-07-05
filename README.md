@@ -1,9 +1,9 @@
-# twitter_sentiment_ana;ysis
+# twitter_sentiment_analysis
 Twitter Sentiment Analysis Challenge for Learn Python for Data Science #2 by @Sirajology on Youtube
 
 ##Overview
 
-The code uses the [tweepy](http://www.tweepy.org/)  library to access the Twitter API and the [TextBlob](https://textblob.readthedocs.io/en/dev/) library to perform Sentiment Analysis on each Tweet. We'll be able to see how positive or negative each tweet is about whatever topic we choose. 
+The code uses the [tweepy](http://www.tweepy.org/)  library to access the Twitter API and the [TextBlob](https://textblob.readthedocs.io/en/dev/) library to perform Sentiment Analysis on each Tweet. We'll be able to see how positive or negative each tweet is about whatever topic we choose.
 
 ##Dependencies
 
@@ -22,4 +22,4 @@ python Twitter-Sentiment-Analysis.py
 
 ##Added
 
-Instead of printing out each tweet, save each Tweet to a CSV file with an associated label. The label is either 'Positive' or 'Negative'. 
+Instead of printing out each tweet, save each Tweet to a CSV file with an associated label. The label is either 'Positive' or 'Negative'.

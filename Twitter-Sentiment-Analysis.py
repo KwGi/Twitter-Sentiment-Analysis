@@ -18,7 +18,7 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 #Step 3 - Retrieve Tweets
-input_search = input("Enter keyword: ")
+input_search = input("Enter keyword topic: ")
 public_tweets = api.search(input_search)
 
 
@@ -31,7 +31,7 @@ public_tweets = api.search(input_search)
 with open('sentiment_analysis.csv','w',newline='') as f :
 
     wrt = csv.writer(f)
-    wrt.writerow(['Tweet','Polarity'])
+    wrt.writerow(['Tweet','Label'])
     #Step 4 Perform Sentiment Analysis on Tweets
     for tweet in public_tweets:
         analysis = TextBlob(tweet.text)
@@ -42,7 +42,7 @@ with open('sentiment_analysis.csv','w',newline='') as f :
             polarity = 'negative'
         else :
             polarity = 'neutral'
-            
+
         #writting in csv
         wrt.writerow([tweet.text.encode("utf-8").strip(),polarity])
 
